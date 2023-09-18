@@ -1,5 +1,5 @@
 // backend/server.js
-
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -14,7 +14,8 @@ const tasks = [];
 const PORT = process.env.PORT || 5005;
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://johnhuang:FullStack1@fullstack.l6kviwn.mongodb.net/?retryWrites=true&w=majority', {
+const uri = process.env.MONGODB_URI; // Get the MongoDB URI from the environment variable
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
