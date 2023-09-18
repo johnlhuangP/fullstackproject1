@@ -1,0 +1,21 @@
+
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+  }
+  
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 1rem 1rem;
+  }
+  
+  li {
+    padding: 0.5rem;
+  }
+  
